@@ -1,8 +1,8 @@
-#Notes from 2016 Data Science for Social Good Fellowship
+# Notes from 2016 Data Science for Social Good Fellowship
 
 Full curriculum: <https://github.com/dssg/hitchhikers-guide/tree/master/curriculum>
 
-##USEFUL COMMAND LINE Tools
+## USEFUL COMMAND LINE Tools
 
 Download from website
 ```
@@ -80,7 +80,7 @@ ls -la > files.txt
 awk '$9 ~/2016*/ {gsub(/WSFM/, "WINDSPEED"); print;}' files.txt
 ```
 
-##Useful Code tidbits
+## Useful Code tidbits
 
 SSH into a project with a key
 ```
@@ -125,7 +125,7 @@ Where `NUMBER` is some number between 10000 and 60000 (just choose it); USERNAME
 
 And then in a web browser on your machine, open the page `localhost:NUMBER`
 
-##Databases Tutorial
+## Databases Tutorial
 Bash code:
 ```
 head -n 100 filename.csv | csvcut -c 1,9 | csvlook
@@ -146,7 +146,7 @@ PSQL stuff:
 cat mycsv.csv | psql -c "\copy raw.mycsv from stdin with csv header;"
 ```
 
-##Functional Programming in Python
+## Functional Programming in Python
 In python: """This is a doc string that should document a python function"""
 Ex:
 ```
@@ -168,7 +168,7 @@ Ex:
 ```
 <http://khwilson.github.io/#15>
 
-##Port Forwarding with Jupyter Notebooks
+## Port Forwarding with Jupyter Notebooks
 
 connecting to jupyter notebook through the kernel:
 ```
@@ -178,7 +178,7 @@ ssh -i _pathtosshkey_ -L #:localhost:# user@server
 jupyter notebook --port 12848 --no-browser
 ```
 
-##More Python and Git Tidbits:
+## More Python and Git Tidbits:
 
 ```
 git fetch
@@ -192,13 +192,13 @@ except:
 ```
 
 
-##Drake
+## Drake
 ```
 Drakefile _______ +=... #(force drake to run)
 ```
 
 
-##GIS
+## GIS
 Types of files:
 - .shp/.dbf/ .
 - vector data and other
@@ -206,7 +206,7 @@ Types of files:
 	- image on a grid (image formed by pixels)
 
 
-##RECORD-LINKAGE AND MAPPING
+## RECORD-LINKAGE AND MAPPING
 
 - first consider if it's m:1, 1:m, or 1:1
 - confidence scores on linkages
@@ -240,14 +240,14 @@ Types of files:
 
 
 
-##DEDUPE
+## DEDUPE
 - <https://github.com/datamade/csvdedupe>
 - <https://dedupe.readthedocs.io/en/latest/>
 - Default metric (affine; Levenstein distance)
 - Generally, before doing record-linkage you want to de-duplicate all of the individual datasets
 
 
-##DATABASES
+## DATABASES
 
 - csv's don't scale; can't random access
 - csv's need to be loaded into memory
@@ -282,7 +282,7 @@ Types of files:
 
 
 
-##Almost All of Machine Learning
+## Almost All of Machine Learning
 
 - features = indicators = variables = predictors
 
@@ -345,7 +345,7 @@ Supervised Learning:
 		- n decision trees with m features, aggregate the trees from the separate trees
 		- <https://www.stat.berkeley.edu/~breiman/RandomForests/>
 
-#sql examples
+## SQL examples
 
 SQL code to flag something by year:
 
@@ -366,7 +366,7 @@ order by ID
 ```
 
 
-#vim tricks
+### vim tricks
 ```
 set number #show number lines
 set list	#show all characters (tabs, spaces, etc)
@@ -375,7 +375,7 @@ a = append (go to last line and add new line)
 ```
 
 
-##FEATURE Generation
+## FEATURE Generation
 
 - anything that might be predictive
 - complexity in features allows us to use less complex models
@@ -436,10 +436,10 @@ a = append (go to last line and add new line)
 			you should explore this more and investigate why that's happening
 
 
-#TESTING
+# TESTING
 <https://github.com/redshiftzero/testing-tutorial>
 
-#######
+
 1) Unit tests vs. integration tests
 	- Unit tests
 		smaller chunks of code
