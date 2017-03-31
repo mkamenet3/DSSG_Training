@@ -286,17 +286,17 @@ Types of files:
 
 - features = indicators = variables = predictors
 
-#1) Supervised:
+- #1) Supervised:
 	- regression; something with a specific outcome you're trying to predictors
 		- labelled data
-#2) Unsupervised:
+- #2) Unsupervised:
 	- clustering/PCA
-#3) Weakly Supervised:
+- #3) Weakly Supervised:
 	- anomaly detection
 	- when you have some labelled and some unlabelled data
 	-semi-supervised clustering (some things should always/never be clustered together)
 
-Unsupervised: Clustering
+- Unsupervised: Clustering
 	- K-means is most common
 	- Good thing to do first
 	- can often figure out how the data looks/works after you try a method
@@ -314,7 +314,7 @@ Unsupervised: Clustering
 		- good way to find data quality errors
 			- Ex: pregnancy codes and females (was only true 98% of the time - what was wrong with that 2%? Improper entry)
 
-Supervised Learning:
+- Supervised Learning:
 	- training/testing
 	- K Nearest Neighbor:
 		- need distance function (most often Euclidean)
